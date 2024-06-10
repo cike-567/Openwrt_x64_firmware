@@ -28,11 +28,14 @@ mkdir 2333
 #  将工作目录从 Openwrt 源代码目录切换到 2333 目录。
 cd 2333
 
-#  拉取 luci-app-smartdns 的源码。
+#  拉取 luci-app-smartdns 的源代码。
 git clone -b lede https://github.com/pymumu/luci-app-smartdns.git
 
 #  将工作目录从 2333 目录切换到 Openwrt 源代码目录。
 cd ..
 
-#  删除自带的 luci-app-smartdns 的源码
+#  删除自带的 luci-app-smartdns 的源代码
 rm -rf feeds/luci/applications/luci-app-smartdns/*
+
+#  替换最新的 luci-app-smartdns 的源代码
+mv 2333/luci-app-smartdns/* feeds/luci/applications/luci-app-smartdns/
