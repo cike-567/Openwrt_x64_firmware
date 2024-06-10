@@ -11,6 +11,5 @@
 #
 
 #  拉取 luci-app-smartdns 的 lede 分支源代码。
-git clone -b lede https://github.com/pymumu/luci-app-smartdns.git
-
+#  git clone -b lede https://github.com/pymumu/luci-app-smartdns.git
 
